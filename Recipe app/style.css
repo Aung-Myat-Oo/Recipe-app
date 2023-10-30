@@ -1,0 +1,228 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px 0px;
+}
+.mobile-container {
+  width: 400px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
+.mobile-container header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.mobile-container header input {
+  border: none;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.mobile-container header input:focus-visible {
+  outline: none;
+}
+.mobile-container header label {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.favourite-container {
+  background-color: #f1dae5;
+  padding: 30px 10px;
+}
+.favourite-container ul {
+  padding: 5px 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 10px;
+  width: 100%;
+}
+.favourite-container ul li {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+.favourite-container ul li i {
+  font-size: 1rem;
+}
+.favourite-container ul li span {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 75px;
+}
+.favourite-container ul::-webkit-scrollbar {
+  width: 0;
+}
+.favourite-container ul::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 1rem;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.favourite-container ul::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 1rem;
+}
+.clear {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -0.3rem;
+  right: -0.3rem;
+  opacity: 0;
+}
+.favourite-container ul li:hover .clear {
+  opacity: 1;
+}
+.favourite-container ul li span {
+  font-size: 12px;
+  width: 100px;
+  text-align: center;
+}
+.favourite-container li img {
+  border: 3px solid gray;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.favourite-container h4 {
+  text-align: center;
+  color: orangered;
+  margin-bottom: 10px;
+}
+.males {
+  padding: 20px;
+}
+.male {
+  border-radius: 5px;
+  background-color: rgb(211, 211, 211);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-bottom: 15px;
+}
+.male-header {
+  position: relative;
+  height: fit-content;
+}
+.male-header span {
+  position: absolute;
+  background-color: white;
+  font-size: 14px;
+  top: 10px;
+  padding: 5px;
+}
+.male-header img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+.male-header img:active {
+  opacity: 0.95;
+}
+.male-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.male-body button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.gray {
+  color: rgb(97, 97, 97);
+}
+.active {
+  color: orangered;
+}
+.meal-info-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 0px;
+}
+.meal-info {
+  background-color: whitesmoke;
+  max-width: 500px;
+  max-height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.meal-info-add {
+  height: 550px;
+  overflow: scroll;
+}
+.meal-info-add::-webkit-scrollbar {
+  width: 0;
+}
+.hide {
+  display: none;
+}
+.meal-info i {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+.meal-info h2 {
+  text-align: center;
+  padding: 20px 0px;
+}
+.meal-info img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 20px 0px;
+}
+.meal-info ul {
+  padding: 20px 30px;
+}
+@media (max-width: 574px) {
+  .meal-info {
+    max-width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .mobile-container {
+    max-width: 350px;
+  }
+  .meal-info {
+    max-width: 370px;
+  }
+}

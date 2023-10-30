@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="mobile-container">
+      <header>
+        <input type="text" id="text" />
+        <label for="text" id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+      </header>
+      <div class="favourite-container">
+        <h4>Favorite Males</h4>
+        <ul id="fav-meal-container"></ul>
+      </div>
+      <div class="males" id="males"></div>
+    </div>
+
+    <div class="meal-info-container hide" id="meal-info-container">
+      <div class="meal-info" id="meal-info">
+        <i class="fa-solid fa-xmark" id="close-info"></i>
+        <div class="meal-info-add" id="meal-info-add"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
