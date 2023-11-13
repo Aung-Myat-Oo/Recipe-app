@@ -26,7 +26,6 @@ function GetRandomMeal() {
       }
     }
 
-    
     return () => {
       fetchMeal();
       // Fetch meal when the component mounts
@@ -34,7 +33,7 @@ function GetRandomMeal() {
   }, []); // Empty dependency array ensures the effect runs only once
 
   return (
-    <div className="rounded-md bg-gray-400">
+    <div className="rounded-md bg-[#babfbc]">
       {isLoading && <h1 className="font-bold text-center py-4">Loading...</h1>}
       {error && <p className="font-bold text-center">Error: {error}</p>}
       {meal && <MealDisplay meal={meal} />}
