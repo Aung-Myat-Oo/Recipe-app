@@ -138,7 +138,6 @@ function mealInfoUpdate(mealData) {
       break;
     }
   }
-  console.log(ingredient);
   mealInfo.innerHTML = `
       <h2>${mealData.strMeal}</h2>
       <img src="${mealData.strMealThumb}" alt="">
@@ -147,7 +146,10 @@ function mealInfoUpdate(mealData) {
         tempora nobis impedit. Fugit?</p>
       <ul>
         ${ingredient.map((data) => `<li>${data}</li>`).join("")}
-      </ul>`;
+      </ul>
+      <div class="youtubeBox">
+        <a href=${mealData.strYoutube} target="_blank"><i class="fa-solid fa-play"></i>Show in Youtube</a>
+      </div>`;
 
   info.classList.remove("hide");
 }

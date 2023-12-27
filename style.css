@@ -149,7 +149,14 @@ body {
   justify-content: space-between;
   padding: 20px 10px;
 }
-.male-body button {
+form button{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.male-body button{
   border: none;
   background-color: transparent;
   font-size: 16px;
@@ -180,23 +187,24 @@ body {
   max-height: 100%;
   width: 100%;
   padding: 20px;
+  padding-top: 40px;
+  padding-right: 0;
   border-radius: 5px;
   position: relative;
 }
 .meal-info-add {
   height: 550px;
-  overflow: scroll;
-}
-.meal-info-add::-webkit-scrollbar {
-  width: 0;
+  overflow-y: scroll;
+  padding-right: 20px;
 }
 .hide {
   display: none;
 }
-.meal-info i {
+.close-info {
   position: absolute;
-  right: 1rem;
+  right: 0.4rem;
   font-size: 1.5rem;
+  top: 5px;
 }
 .meal-info h2 {
   text-align: center;
@@ -223,4 +231,26 @@ body {
   .meal-info {
     max-width: 370px;
   }
+}
+.youtubeBox{
+  display: flex;
+  justify-content: end;
+}
+.youtubeBox a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.youtubeBox i{
+  background-color: #CD201F;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 9px 18px;
+  border-radius:5px;
+}
+.youtubeBox i:active{
+  scale: 0.95;
 }
