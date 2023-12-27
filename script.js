@@ -151,10 +151,12 @@ function mealInfoUpdate(mealData) {
 
   info.classList.remove("hide");
 }
+
 closeInfoBtn.addEventListener("click", () => {
   info.classList.add("hide");
 });
-searchBtn.addEventListener("click", async () => {
+searchBtn.addEventListener("click", async (e) => {
+  e.preventDefault();
   males.innerHTML = "";
   const mealsSearch = search.value;
   const dataMeals = await getMealBySearch(mealsSearch);

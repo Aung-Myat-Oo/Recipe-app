@@ -20,28 +20,26 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
 }
-.mobile-container header {
+.mobile-container form {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-.mobile-container header input {
+.mobile-container form input {
   border: none;
   background-color: #eee;
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.mobile-container header input:focus-visible {
   outline: none;
 }
-.mobile-container header label {
+.mobile-container form button {
   background-color: transparent;
   border: none;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .favourite-container {
   background-color: #f1dae5;
