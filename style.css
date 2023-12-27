@@ -149,14 +149,14 @@ body {
   justify-content: space-between;
   padding: 20px 10px;
 }
-form button{
+form button {
   border: none;
   background-color: transparent;
   font-size: 20px;
   cursor: pointer;
   margin-left: 10px;
 }
-.male-body button{
+.male-body button {
   border: none;
   background-color: transparent;
   font-size: 16px;
@@ -219,6 +219,28 @@ form button{
 .meal-info ul {
   padding: 20px 30px;
 }
+.youtubeBox {
+  display: flex;
+  justify-content: end;
+}
+.youtubeBox a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.youtubeBox i {
+  background-color: #cd201f;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 9px 18px;
+  border-radius: 5px;
+}
+.youtubeBox i:active {
+  scale: 0.95;
+}
 @media (max-width: 574px) {
   .meal-info {
     max-width: 400px;
@@ -226,31 +248,9 @@ form button{
 }
 @media (max-width: 450px) {
   .mobile-container {
-    max-width: 350px;
+    max-width: 320px;
   }
   .meal-info {
     max-width: 370px;
   }
-}
-.youtubeBox{
-  display: flex;
-  justify-content: end;
-}
-.youtubeBox a{
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-.youtubeBox i{
-  background-color: #CD201F;
-  border: none;
-  color: white;
-  font-size: 12px;
-  padding: 9px 18px;
-  border-radius:5px;
-}
-.youtubeBox i:active{
-  scale: 0.95;
 }
