@@ -181,7 +181,7 @@ form button {
   min-height: 100vh;
   padding: 20px 0px;
 }
-.meal-info {
+.meal-info-add {
   background-color: whitesmoke;
   max-width: 500px;
   max-height: 100%;
@@ -191,6 +191,7 @@ form button {
   padding-right: 0;
   border-radius: 5px;
   position: relative;
+  margin-bottom: 20px;
 }
 .meal-info-add {
   height: 550px;
